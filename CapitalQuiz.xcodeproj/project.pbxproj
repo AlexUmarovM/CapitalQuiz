@@ -77,6 +77,26 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		FA10CFE824A8D45A00BCDF47 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				FA10CFE424A8C5E200BCDF47 /* StorageManager.swift */,
+				FA15ACED24A7CE4C00F3D859 /* NetworkManager.swift */,
+				FA30A4FF24A7EE87000B02BF /* DataManager.swift */,
+			);
+			name = Managers;
+			sourceTree = "<group>";
+		};
+		FA10CFE924A8D48200BCDF47 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				FA41317624A7BEB400B13B0A /* MainViewController.swift */,
+				FA15ACE924A7CCB100F3D859 /* ResultViewController.swift */,
+				FA15ACE724A7C90700F3D859 /* QuizViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
 		FA41316624A7BEB400B13B0A = {
 			isa = PBXGroup;
 			children = (
@@ -100,14 +120,10 @@
 			children = (
 				FA41317224A7BEB400B13B0A /* AppDelegate.swift */,
 				FA41317424A7BEB400B13B0A /* SceneDelegate.swift */,
-				FA41317624A7BEB400B13B0A /* MainViewController.swift */,
+				FA10CFE924A8D48200BCDF47 /* ViewControllers */,
 				FA41317824A7BEB400B13B0A /* Main.storyboard */,
-				FA15ACED24A7CE4C00F3D859 /* NetworkManager.swift */,
 				FA15ACEB24A7CCDA00F3D859 /* LeadersListTableViewController.swift */,
-				FA15ACE924A7CCB100F3D859 /* ResultViewController.swift */,
-				FA15ACE724A7C90700F3D859 /* QuizViewController.swift */,
-				FA10CFE424A8C5E200BCDF47 /* StorageManager.swift */,
-				FA30A4FF24A7EE87000B02BF /* DataManager.swift */,
+				FA10CFE824A8D45A00BCDF47 /* Managers */,
 				FA10CFE624A8C6F000BCDF47 /* Player.swift */,
 				FA30A4FD24A7D4A1000B02BF /* Extensions.swift */,
 				FA41318624A7C6ED00B13B0A /* Country.swift */,
