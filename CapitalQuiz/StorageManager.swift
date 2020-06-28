@@ -8,17 +8,18 @@
 
 import Foundation
 class StorageManager {
-
-static let shared = StorageManager()
-
-private let userDefaults = UserDefaults.standard
-private let playerKey = "players"
-private let documentsDirecory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
-private var archiveURL: URL!
-
-private init() {
-    archiveURL = documentsDirecory.appendingPathComponent("player").appendingPathExtension("plist")
-}
+    
+    static let shared = StorageManager()
+    
+    private let userDefaults = UserDefaults.standard
+    private let playerKey = "players"
+    private let documentsDirecory = FileManager.default.urls(for:.documentDirectory, in: .userDomainMask).first!
+    private var archiveURL: URL!
+    
+    private init() {
+        archiveURL = documentsDirecory.appendingPathComponent("player").appendingPathExtension("plist")
+    }
+    
     func savePlayer(with player: Player) {
         var players = fetchPlayers()
         players.append(player)

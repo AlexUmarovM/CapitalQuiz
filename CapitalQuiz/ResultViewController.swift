@@ -22,13 +22,12 @@ class ResultViewController: UIViewController {
         leadersButton.layer.cornerRadius = 10
     }
     
-   
     @IBAction func getBack(_ sender: UIButton) {
         savePlayer()
         dismiss(animated: true, completion: nil)
     }
+    
     @IBAction func getLeadersList(_ sender: UIButton) {
         savePlayer()
     }
-
 }

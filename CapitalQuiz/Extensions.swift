@@ -9,7 +9,7 @@
 import UIKit
 extension QuizViewController {
     func getQuastionAnswer() -> String {
-        let quastionCounty = countries.randomElement()!
+         let quastionCounty = countries.randomElement()!
         var allAswers: [String] = []
         quastionLabel.text = "What is a capital of \(quastionCounty.name!)"
         if quastionCounty.capital == "" {

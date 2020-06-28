@@ -14,7 +14,6 @@ struct Country {
            name = item["name"] as? String
            capital = item["capital"] as? String
        }
-       
        static func getArray(from arrayOfItems: Any) -> [Country]? {
            guard let arrayOfItems = arrayOfItems as? Array<[String: Any]> else { return nil }
            return arrayOfItems.compactMap { Country(item: $0) }

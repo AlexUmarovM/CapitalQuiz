@@ -13,12 +13,12 @@ class LeadersListTableViewController: UITableViewController {
     var players: [Player] = []
     @IBOutlet var backButton: UIBarButtonItem!
     @IBAction func unwind(for sugue: UIStoryboardSegue) {}
+   
     override func viewDidLoad() {
         super.viewDidLoad()
         players = StorageManager.shared.fetchPlayersFromFile()
     }
     
-    // MARK: - Table view data source
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return players.count
     }

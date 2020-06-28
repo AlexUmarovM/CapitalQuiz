@@ -9,19 +9,21 @@
 import UIKit
 
 class MainViewController: UIViewController {
+    
     @IBOutlet var playerNameTextField: UITextField!
     @IBOutlet var startQuizButton: UIButton!
     @IBOutlet var leadersListButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-                NetworkManager.fetchData { countries in
-                    GetData.shared.countries = countries
-                }
+        NetworkManager.fetchData { countries in
+            GetData.shared.countries = countries
+        }
         startQuizButton.layer.cornerRadius = 10
         leadersListButton.layer.cornerRadius = 10
     }
     @IBAction func unwind(for sugue: UIStoryboardSegue) {}
-
+    
     @IBAction func startQuiz(_ sender: Any) {
         if playerNameTextField.text == nil || playerNameTextField.text == "" {
             nameAlert()
@@ -31,10 +33,8 @@ class MainViewController: UIViewController {
             performSegue(withIdentifier: "startQuiz", sender: nil)
         }
     }
-    
 }
 extension MainViewController: UITextFieldDelegate {
-    
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         super .touchesBegan(touches, with: event)
         view.endEditing(true)
