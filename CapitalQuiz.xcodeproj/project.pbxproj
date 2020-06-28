@@ -97,6 +97,49 @@
 			name = ViewControllers;
 			sourceTree = "<group>";
 		};
+		FA10CFEA24A8D69300BCDF47 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				FA41317824A7BEB400B13B0A /* Main.storyboard */,
+				FA41317D24A7BEB900B13B0A /* LaunchScreen.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		FA10CFEB24A8D6A800BCDF47 /* TableViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				FA15ACEB24A7CCDA00F3D859 /* LeadersListTableViewController.swift */,
+			);
+			name = TableViewControllers;
+			sourceTree = "<group>";
+		};
+		FA10CFEC24A8D6BE00BCDF47 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FA10CFE624A8C6F000BCDF47 /* Player.swift */,
+				FA41318624A7C6ED00B13B0A /* Country.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		FA10CFED24A8D6CA00BCDF47 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FA30A4FD24A7D4A1000B02BF /* Extensions.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		FA10CFEE24A8D6F000BCDF47 /* DelegateFiles */ = {
+			isa = PBXGroup;
+			children = (
+				FA41317224A7BEB400B13B0A /* AppDelegate.swift */,
+				FA41317424A7BEB400B13B0A /* SceneDelegate.swift */,
+			);
+			name = DelegateFiles;
+			sourceTree = "<group>";
+		};
 		FA41316624A7BEB400B13B0A = {
 			isa = PBXGroup;
 			children = (
@@ -118,17 +161,14 @@
 		FA41317124A7BEB400B13B0A /* CapitalQuiz */ = {
 			isa = PBXGroup;
 			children = (
-				FA41317224A7BEB400B13B0A /* AppDelegate.swift */,
-				FA41317424A7BEB400B13B0A /* SceneDelegate.swift */,
+				FA10CFEE24A8D6F000BCDF47 /* DelegateFiles */,
 				FA10CFE924A8D48200BCDF47 /* ViewControllers */,
-				FA41317824A7BEB400B13B0A /* Main.storyboard */,
-				FA15ACEB24A7CCDA00F3D859 /* LeadersListTableViewController.swift */,
+				FA10CFEA24A8D69300BCDF47 /* Storyboards */,
+				FA10CFEB24A8D6A800BCDF47 /* TableViewControllers */,
 				FA10CFE824A8D45A00BCDF47 /* Managers */,
-				FA10CFE624A8C6F000BCDF47 /* Player.swift */,
-				FA30A4FD24A7D4A1000B02BF /* Extensions.swift */,
-				FA41318624A7C6ED00B13B0A /* Country.swift */,
+				FA10CFEC24A8D6BE00BCDF47 /* Models */,
+				FA10CFED24A8D6CA00BCDF47 /* Extensions */,
 				FA41317B24A7BEB900B13B0A /* Assets.xcassets */,
-				FA41317D24A7BEB900B13B0A /* LaunchScreen.storyboard */,
 				FA41318024A7BEB900B13B0A /* Info.plist */,
 			);
 			path = CapitalQuiz;
